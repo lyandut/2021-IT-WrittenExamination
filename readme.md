@@ -10,7 +10,7 @@
 | 京东物流 | [3.27](https://www.nowcoder.com/discuss/625890?type=post&order=create&pos=&page=1&channel=-1&source_id=search_post_nctrack) | [jd2](春招/jd2.cpp) | 18+9 | `jd2`有争议，详见[牛客网](https://www.nowcoder.com/discuss/625890?type=post&order=create&pos=&page=1&channel=-1&source_id=search_post_nctrack)。 |
 | 美团 | [3.20](https://www.nowcoder.com/discuss/619325?type=post&order=create&pos=&page=1&channel=-1&source_id=search_post_nctrack) | [mt1](春招/mt1.cpp) | 100+45+63+45 | |
 | 腾讯 | [4.4](https://www.nowcoder.com/discuss/632175?type=post&order=create&pos=&page=2&channel=-1&source_id=search_post_nctrack) | [tx1](春招/tx1.cpp), [tx3](春招/tx3.cpp), [tx5](春招/tx5.cpp) | 0+100+0+0+40 | |
-| 网易严选 | [3.27](https://www.nowcoder.com/discuss/625530?type=post&order=time&pos=&page=1&channel=-1&source_id=search_post_nctrack) | [wy1](春招/wy1.cpp), [wy4](春招/wy4.cpp) | 10+20+10+60 | 笔试挂 |
+| 网易严选 | [3.27](https://www.nowcoder.com/discuss/625530?type=post&order=time&pos=&page=1&channel=-1&source_id=search_post_nctrack) | [wy1](春招/wy1.cpp), [wy4](春招/wy4.cpp) | 10+20+10+60 | 笔试挂。。。 |
 | 字节跳动 | [4.11](https://www.nowcoder.com/discuss/637639?type=post&order=create&pos=&page=1&channel=-1&source_id=search_post_nctrack) | | 25+80+0+60 | 不允许使用本地IDE。|
 | 百度 | [4.11](https://www.nowcoder.com/discuss/637603?type=post&order=create&pos=&page=1&channel=-1&source_id=search_post_nctrack) | | 100+10+0 | |
 
@@ -25,8 +25,8 @@
 ## 面试
 | 公司 | Code | 备注 |
 | :-: | :-: | :-: |
-| 字节跳动 | [zj1.cpp](面试/zj1.cpp) | |
-| 华为 | [hw1.cpp](面试/hw1.cpp), [hw2.cpp](面试/hw2.cpp) | |
-| 百度 | [bd1.cpp](面试/bd1.cpp), [bd2.cpp](面试/bd2.cpp) | |
-| 京东 | [jd1.cpp](面试/jd1.cpp) | |
-| 腾讯 | [tx1.cpp](面试/tx1.cpp) | |
+| 字节跳动 | [zj1](面试/zj1.cpp) | |
+| 华为 | [hw1](面试/hw1.cpp), [hw2](面试/hw2.cpp) | |
+| 百度 | [bd1](面试/bd1.cpp), [bd2](面试/bd2.cpp) | |
+| 京东 | [jd1](面试/jd1.cpp) | |
+| 腾讯 | [tx1](面试/tx1.cpp) | |
