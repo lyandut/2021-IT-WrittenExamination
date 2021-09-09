@@ -1,58 +1,45 @@
 #include <iostream>
-#include <string>
-#include <map>
-
+#include <cstring>
 using namespace std;
 
-/*
-指数合并
-输入：x^2*y*y^2*z^3
-输出：x2y3z3
-*/
-
-bool is_char(char ch) { return ch >= 'a' && ch <= 'z'; }
-
-bool is_number(char ch) { return ch >= '1' && ch <= '9'; }
-
-int get_number(string& str, int s, int t) {
-    int res = 0;
-    for(int i=s; i<=t; ++i) {
-        res *= 10;
-        res += (str[i]-'0');
-    }
-    return res;
+void test1() {
+    char* a[] = {"hello", "the", "world"};
+    char** pa = a;
+    pa++;
+    cout << *pa << endl; // the
 }
 
-string func(string& input) {
-    map<char, int> mp;
-    for(int i=0; i<input.size();) {
-        if(input[i] == '*') {
-            i++;
-            continue;
-        }
-        if(is_char(input[i])) {
-            if(input[i+1] == '^') {
-                int s = i+2;
-                int j = s;
-                while(j<input.size() && is_number(input[j])) j++;
-                mp[input[i]] += get_number(input, s, j-1);
-                i = j;
-            }
-            else {
-                mp[input[i]] = 1;
-                i++;
-            }
-        }
-    }
-    string res;
-    for(auto iter=mp.begin(); iter!=mp.end(); ++iter) {
-        res += iter->first + to_string(iter->second);
-    }
-    return res;
+void GetMemory(char* p) {  // 报错Segmentation fault, 改为引用传参: char*& p
+    p = (char*) malloc(100);
 }
 
-int main() {
-    string input = "x^2*y*y^2*z^3";
-    cout << func(input) << endl;
+void test2() {
+    char *str=NULL;
+    GetMemory(str);
+    strcpy(str, "Thunder");
+    strcat(str+2, "Downloader"); // +2没用，坑！
+    printf(str);
+}
+
+struct _THUNDER {
+    int iversion; // 4
+    char cTag; // 1
+    char cAdv; // 1 + 2
+    int iUser; // 4
+    char cEnd; // 1 + 3
+} Thunder;
+
+void test3() {
+    uint64_t a = 0x1020304050607080; // 8字节, 大端序
+    char* b = (char*)&a;             // 1字节, b -> 0x80
+    uint16_t * c =( uint16_t*)(b+1); // 2字节, c -> 0x6070
+    printf("0x%x\n", *(c+2));        // 2字节, c+2 -> 0x2030
+}
+
+int main(){
+    test1();
+    test2();
+    cout << sizeof(Thunder) << endl;
+    test3();
     return 0;
 }

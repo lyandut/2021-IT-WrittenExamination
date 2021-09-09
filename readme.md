@@ -29,4 +29,4 @@
 | 华为 | [hw1](面试/hw1.cpp), [hw2](面试/hw2.cpp) | |
 | 百度 | [bd1](面试/bd1.cpp), [bd2](面试/bd2.cpp) | |
 | 京东 | [jd1](面试/jd1.cpp) | |
-| 腾讯 | [tx1](面试/tx1.cpp) | |
+| 腾讯 | [tx1](面试/tx1.cpp), [tx2](面试/tx2.cpp) | |
